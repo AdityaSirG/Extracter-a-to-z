@@ -13,6 +13,9 @@
 
 ---
 
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https://github.com/Cgps1234/newtxt)
+                     
+
 ## ✨ Features
 
 - 📚 **35+ Education Platforms** support
