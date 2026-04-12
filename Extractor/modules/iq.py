@@ -3,7 +3,7 @@ import datetime, pytz, re, aiofiles, subprocess, os, base64, io
 import aiohttp
 import aiofiles
 import os
-import server 
+import requests as server
 from pyrogram import Client
 from pyrogram import filters
 from Extractor import app
