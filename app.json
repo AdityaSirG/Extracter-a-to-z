@@ -79,10 +79,5 @@
       "size": "eco"
     }
   },
-  "addons": [
-    {
-      "plan": "mongolab"
-    }
-  ],
   "stack": "heroku-22"
 }
