@@ -1,0 +1,88 @@
+{
+  "name": "UG Extractor Bot",
+  "description": "एक powerful Telegram Bot जो online education platforms से course links extract करता है। 35+ platforms को support करता है।",
+  "keywords": [
+    "telegram",
+    "bot",
+    "extractor",
+    "education",
+    "courses",
+    "python",
+    "pyrogram"
+  ],
+  "repository": "https://github.com/AdityaSirG/Extracter-a-to-z",
+  "website": "https://github.com/AdityaSirG/Extracter-a-to-z",
+  "success_url": "/",
+  "engines": {
+    "python": "3.10.11"
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "env": {
+    "API_ID": {
+      "description": "Telegram API ID from https://my.telegram.org",
+      "value": "",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Telegram API Hash from https://my.telegram.org",
+      "value": "",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Your Telegram Bot Token from @BotFather",
+      "value": "",
+      "required": true
+    },
+    "BOT_USERNAME": {
+      "description": "Bot Username (with @ symbol)",
+      "value": "",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Your Telegram User ID (Bot Owner)",
+      "value": "",
+      "required": true
+    },
+    "CHANNEL_ID": {
+      "description": "Log Channel ID (negative format: -1001234567890)",
+      "value": "",
+      "required": true
+    },
+    "CHANNEL_ID2": {
+      "description": "Force Subscribe Channel ID (negative format: -1001234567890)",
+      "value": "",
+      "required": true
+    },
+    "MONGO_URL": {
+      "description": "MongoDB connection string (get from mongodb.com/atlas)",
+      "value": "",
+      "required": true
+    },
+    "PREMIUM_LOGS": {
+      "description": "Premium logs channel ID (optional)",
+      "value": "",
+      "required": false
+    },
+    "THUMB_URL": {
+      "description": "Default thumbnail image URL (optional)",
+      "value": "",
+      "required": false
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  },
+  "addons": [
+    {
+      "plan": "mongolab"
+    }
+  ],
+  "stack": "heroku-22"
+}
